@@ -4,7 +4,7 @@ from PyPDF2 import PdfFileMerger, PdfFileReader
 import os
 import emoji as emo
 import io
-output_pdf = "documents\pdf.pdf"
+output_pdf = "documents/pdf.pdf"
 
 def unir_pdfs(output_path, documents):
     pdf_final = PyPDF2.PdfMerger()
@@ -16,7 +16,7 @@ def unir_pdfs(output_path, documents):
         pdf_final.write(output_file)
     
 st.header("Unir archivos pdf",divider="rainbow" )
-st.image("img\pdf_img.png")
+st.image("img/pdf_img.png")
 st.subheader("Adjuntar archivos para unir",)
 
 pdf_adjuntos = st.file_uploader(label="",accept_multiple_files=True, type='pdf')

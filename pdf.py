@@ -1,5 +1,6 @@
 import streamlit as st
-import PyPDF2 from PyPDF2 import PdfFileMerger, PdfFileReader
+import PyPDF2
+from PyPDF2 import PdfFileMerger, PdfFileReader
 import os
 import emoji as emo
 import io

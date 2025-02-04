@@ -11,7 +11,7 @@ st.set_page_config(page_title="Editor de PDFs", page_icon="📄", layout="center
 st.title("📄 Editor de PDFs")
 st.subheader("Elige una función para modificar tu PDF:")
 # Menú de selección
-opcion = st.selectbox("Selecciona una opción:", ["Unir PDFs", "Reordenar páginas", "Eliminar páginas", "Rotar páginas"])
+opcion = st.selectbox("Selecciona una opción:", ["Seleccione una opción","Unir PDFs", "Reordenar páginas", "Eliminar páginas", "Rotar páginas"])
 
 def unir_pdfs(output_path, documents):
     pdf_final = PyPDF2.PdfMerger()

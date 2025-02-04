@@ -6,6 +6,16 @@ import emoji as emo
 import io
 output_pdf = "documents/pdf.pdf"
 
+st.set_page_config(page_title="Editor de PDFs", page_icon="📄", layout="centered")
+# Título de la app
+st.title("📄 Editor de PDFs")
+st.subheader("Elige una función para modificar tu PDF:")
+# Menú de selección
+opcion = st.selectbox("Selecciona una opción:", ["Unir PDFs", "Reordenar páginas", "Eliminar páginas", "Rotar páginas"])
+
+
+
+
 def unir_pdfs(output_path, documents):
     pdf_final = PyPDF2.PdfMerger()
     for document in documents:
